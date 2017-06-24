@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'pages#index'
   get '/home' => 'pages#home'   #this overrides the default URL
-  get '/profile' => 'pages#profile'   #this overrides the default URL
+  get '/users/:id' => 'pages#profile'   #this overrides the default URL
   get '/explore' => 'pages#explore'   #this overrides the default URL
 
   # The priority is based upon order of creation: first created -> highest priority.

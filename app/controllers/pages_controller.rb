@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
 
   def profile
+    if user.find_by_username
+    @username = params[:id]
   end
 
   def explore
