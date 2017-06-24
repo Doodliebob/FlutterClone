@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   root 'pages#index'
   get '/home' => 'pages#home'   #this overrides the default URL
   get '/profile' => 'pages#profile'   #this overrides the default URL
